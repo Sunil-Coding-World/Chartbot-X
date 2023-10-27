@@ -1,9 +1,10 @@
 import React from 'react'
-import {IoBookOutline} from "react-icons/io5";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {FiLogIn} from "react-icons/fi";
 import {FaUser} from "react-icons/fa";
 import {motion} from "framer-motion"
-const Header = ({isAuthenticed=true}) => {
+import { faRobot } from '@fortawesome/free-solid-svg-icons';
+const Header = ({isAuthenticed=false}) => {
   return (
     <nav>
         <motion.div
@@ -12,7 +13,7 @@ const Header = ({isAuthenticed=true}) => {
         transition={{delay:1}}
       >
       <a href ="/">
-        <IoBookOutline/>
+      <FontAwesomeIcon className="open-icon" icon={faRobot} />
       </a>
         </motion.div>
         <div>
@@ -20,7 +21,7 @@ const Header = ({isAuthenticed=true}) => {
             <a href ="/" > courses</a>
             <a href ="/" > contact</a>
             <a href ="/" > about</a>
-            <a href ={isAuthenticed ? "/profile" : "/login"}>
+            <a href ={isAuthenticed ? "/" : "/"}>
             {isAuthenticed ? <FaUser/> : <FiLogIn/>}
             </a>
         </div>
