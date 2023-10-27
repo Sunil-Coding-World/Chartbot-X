@@ -61,7 +61,7 @@ const Chatbot = () => {
             </li>
           ))}
 
-          <li className="chat outgoing">
+          {/* <li className="chat outgoing">
             <p>Can you tell me more about your pricing?</p>
           </li>
           <li className="chat incoming">
@@ -69,7 +69,7 @@ const Chatbot = () => {
               <FontAwesomeIcon className="open-icon" icon={faRobot} />
             </span>
             <p>Sure, we have different pricing plans...</p>
-          </li>
+          </li> */}
         </ul>
         <div className="chat-input">
           <textarea
