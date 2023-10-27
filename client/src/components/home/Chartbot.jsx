@@ -28,9 +28,9 @@ const Chatbot = () => {
       setMessages([...messages, { type: 'outgoing', message: inputMessage }]);
       setInputMessage('');
 
-      setTimeout(() => {
-        setMessages([...messages, { type: 'incoming', message: 'I am a chatbot response' }]);
-      }, 1000);
+      // setTimeout(() => {
+      //   setMessages([...messages, { type: 'incoming', message: 'I am a chatbot response' }]);
+      // }, 1000);
     }
   };
 
