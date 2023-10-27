@@ -9,7 +9,7 @@ const Header = ({isAuthenticed=false}) => {
     <nav>
         <motion.div
         initial={{x:"-100"}}
-        whileInView={{ x: 0 }}
+        animate={{ x: 0 }}
         transition={{delay:1}}
       >
       <a href ="/">

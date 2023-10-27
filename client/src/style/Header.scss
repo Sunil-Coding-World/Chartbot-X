@@ -17,6 +17,7 @@ nav{
     color: $red;
     font-size: 3rem;
    }
+
   > a{
     margin: 0 2rem;
     color: $dark;
@@ -28,7 +29,7 @@ nav{
     > svg{
         color: $red;
         transition: inherit;
-        font-size: 1.5rem;
+        font-size: 1rem;
 
         &:hover{
             color: $lightdark;
@@ -43,10 +44,11 @@ nav{
     
 nav{
     padding: 1rem;
-
+    width: 100%;
     > div > a {
         margin: 0 0.5rem;
     }
+    
 }
 
 }
