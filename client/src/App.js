@@ -1,5 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom" 
 import HomePage from "./pages/HomePage"
+import Chatbot from '../src/components/home/Chartbot'
+
 
 
  import "./style/app.scss";
@@ -25,12 +27,12 @@ import "./style/Signup.scss"
   [ 
    { 
      path: "/", 
-     element: <><HomePage /></> , 
+     element: <><HomePage/></> , 
    }, 
-  //  { 
-  //    path: "/courses", 
-  //    element:<><CoursePage /></> , 
-  //  }, 
+   { 
+     path: "/chatbot", 
+     element:<><Chatbot /></> , 
+   }, 
   //  { 
   //    path: "/course-detail/:id", 
   //    element:<><CourseDetailPage /></> , 

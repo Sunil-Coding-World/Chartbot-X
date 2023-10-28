@@ -18,7 +18,7 @@ const Home = () => {
     <motion.h1 {...options} transition={{delay:1}}>Chatbot X</motion.h1>
     <motion.p {...options}  transition={{delay:1}}>Your personalised Ai powered chatbot</motion.p>
     </div>  
-    <motion.a href="/courses"
+    <motion.a href="/chatbot"
     {...options}  transition={{delay:1}}
         ><h6>Explore chatbot X</h6> </motion.a>  
     
